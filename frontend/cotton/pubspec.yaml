@@ -1,0 +1,33 @@
+name: cotton
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dynamic_color: ^1.7.0
+  tflite_flutter: ^0.11.0
+  shadcn_ui: ^0.19.3
+  onnxruntime: ^1.4.1
+  ml_preprocessing: ^7.0.2
+  http: ^1.3.0
+  flutter_svg: ^2.0.17
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/linear_regression.tflite
+    - assets/models/neural_networks.tflite
+    - assets/models/random_forest.onnx
+    - assets/images/cotton_light.png
+    - assets/images/cotton_dark.png
+    - assets/images/cotton_img.svg
